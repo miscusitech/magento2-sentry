@@ -68,16 +68,9 @@ class GlobalExceptionCatcher
             $config->setEnvironment($environment);
         }
 
-        $config->setBeforeSend(function (\Sentry\Event $event, ?\Sentry\EventHint $hint): ?\Sentry\Event {
-            $data = $this->dataObjectFactory->create();
-            $data->setEvent($event);
-            $data->setHint($hint);
-            $this->eventManager->dispatch('sentry_before_send', [
-                'sentry_event' => $data,
-            ]);
-
-            return $data->getEvent();
-        });
+        if ($this->sentryHelper->isTracingEnabled() && $this->sentryHelper->isPerformanceTrackingEnabled()) {
+            $config->setTracesSampleRate($this->sentryHelper->getTracingSampleRate());
+        }
 
         $this->eventManager->dispatch('sentry_before_init', [
             'config' => $config,
