@@ -4,7 +4,7 @@ This Magento 2 module integrates the [Sentry sdk](https://github.com/getsentry/s
 
 ## Installation
 - `composer require justbetter/magento2-sentry`
-- `bin/magento module:enable Miscusi_Sentry`
+- `bin/magento module:enable JustBetter_Sentry`
 - `bin/magento setup:upgrade`
 - `bin/magento setup:di:compile`
 - `bin/magento setup:static-content:deploy`

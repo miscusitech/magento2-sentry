@@ -18,7 +18,7 @@ class Sentry extends Action
      *
      * @see _isAllowed()
      */
-    const ADMIN_RESOURCE = 'Miscusi_Sentry::sentry';
+    const ADMIN_RESOURCE = 'JustBetter_Sentry::sentry';
 
     /**
      * @var PageFactory

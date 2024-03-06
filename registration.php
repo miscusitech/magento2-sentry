@@ -4,6 +4,6 @@ use Magento\Framework\Component\ComponentRegistrar;
 
 ComponentRegistrar::register(
     ComponentRegistrar::MODULE,
-    'Miscusi_Sentry',
+    'JustBetter_Sentry',
     __DIR__
 );
