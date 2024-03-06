@@ -5,7 +5,7 @@
                 <resource id="Magento_Backend::stores">
                     <resource id="Magento_Backend::stores_settings">
                         <resource id="Magento_Config::config">
-                            <resource id="JustBetter_Sentry::configuration" title="JustBetter Sentry Module" sortOrder="1" />
+                            <resource id="Miscusi_Sentry::configuration" title="JustBetter Sentry Module" sortOrder="1" />
                         </resource>
                     </resource>
                 </resource>

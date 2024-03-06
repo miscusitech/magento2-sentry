@@ -1,5 +1,5 @@
 var config = {
 	paths: {
-		'justbetter/testsentry': 'JustBetter_Sentry/js/testsentry'
+		'justbetter/testsentry': 'Miscusi_Sentry/js/testsentry'
 	}
 };
